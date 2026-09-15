@@ -9,6 +9,7 @@
   <meta name="author" content="Ronaldo Franco Jaldin">
   <title>Home — Ronaldo Franco Jaldin · Neovim</title>
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <script src="assets/js/nvim-theme.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -94,14 +95,6 @@
           </header>
           <p><strong>Thesis:</strong> GFlowNet Post-training of a Language Model for Text-conditioned Molecule Generation.</p>
         </article></section>
-<section class="closing" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <p>
-          I am interested in machine-learning research, applied AI work, teaching, and
-          research collaborations. You can reach me at
-          <a href="mailto:ronaldofj83@gmail.com">ronaldofj83@gmail.com</a>.
-        </p>
-      </section>
 
       </main>
       <div class="end-of-buffer" aria-hidden="true">~<br>~<br>~</div>
@@ -110,7 +103,10 @@
   </div>
   <footer class="statusline" aria-label="Theme information">
     <span class="mode">NORMAL</span><span class="status-file">readme.md</span>
-    <span class="status-theme">gruvbox · light</span><span class="encoding">UTF-8</span><a href="#content">↑ Top</a>
+    <span class="status-theme" id="theme-label">gruvbox · light</span>
+    <button class="dark-toggle" id="dark-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
+    <a class="bottom-view-switch" href="index.html">Reading view</a>
+    <span class="encoding">UTF-8</span><a href="#content">↑ Top</a>
   </footer>
 </body>
 </html>

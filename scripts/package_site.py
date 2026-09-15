@@ -24,6 +24,7 @@ FILES = (
     ".nojekyll",
     "assets/css/small.css",
     "assets/css/nvim.css",
+    "assets/js/nvim-theme.js",
     "assets/images/favicon.svg",
     "assets/docs/ronaldo-franco-industry-cv.pdf",
     "assets/docs/ronaldo-franco-academic-cv.pdf",

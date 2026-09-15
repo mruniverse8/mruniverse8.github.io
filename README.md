@@ -3,10 +3,12 @@
 A static portfolio with two presentations:
 
 - **[Reading view](https://mruniverse8.github.io/)** — the default, minimal design.
-- **[Neovim view](https://mruniverse8.github.io/index_nvim.html)** — Gruvbox Light,
+- **[Neovim view](https://mruniverse8.github.io/index_nvim.html)** — Gruvbox Light and Dark,
   monospace typography, file explorer, document tabs, and status line.
 
-Both presentations share the same content and work without JavaScript.
+Both presentations share the same content. The bottom bar includes a Dark mode toggle
+and a link back to the reading view. The toggle remembers your choice between pages
+and visits; without JavaScript, the Neovim view remains readable in its default light theme.
 
 ## Repository map
 
@@ -22,7 +24,8 @@ index_small.html                 Compatibility redirect to Home
 404.html                         Missing-page response
 assets/
   css/small.css                  Reading theme
-  css/nvim.css                   Gruvbox Light theme
+  css/nvim.css                   Gruvbox light/dark themes
+  js/nvim-theme.js               Theme switching and saved preference
   docs/                          Downloadable CV PDFs
   images/favicon.svg             Site icon
 scripts/
@@ -71,7 +74,7 @@ python3 scripts/package_site.py
 ```
 
 This regenerates the Neovim pages and packages only the deployable HTML, stylesheets,
-favicon, CV PDFs, `robots.txt`, and `.nojekyll` into `dist/portfolio.zip`.
+theme script, favicon, CV PDFs, `robots.txt`, and `.nojekyll` into `dist/portfolio.zip`.
 The archive excludes scripts, documentation, and Git history.
 
 CV source files and the recovered ML repositories are maintained outside this public
