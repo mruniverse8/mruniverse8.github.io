@@ -1,26 +1,79 @@
 # Ronaldo Franco Jaldin — Portfolio
 
-Static personal website for <https://mruniverse8.github.io/>.
+A static portfolio with two presentations:
 
-- `index.html`: the default reading presentation.
-- `index_nvim.html`: the light Neovim-inspired presentation.
-- Both presentations include Experience, Research, Projects, Teaching, and Competitive Programming.
-- Downloadable industry and academic CVs are under `assets/docs/`.
+- **[Reading view](https://mruniverse8.github.io/)** — the default, minimal design.
+- **[Neovim view](https://mruniverse8.github.io/index_nvim.html)** — Gruvbox Light,
+  monospace typography, file explorer, document tabs, and status line.
+
+Both presentations share the same content and work without JavaScript.
+
+## Repository map
+
+```text
+index.html                       Home and contact links
+experience.html                  Professional experience
+research.html                    Publication and thesis
+projects.html                    Five ML projects and PetsADHD
+teaching.html                    Courses, mentorship, community
+competitive-programming.html     Contest results and training
+*_nvim.html                      Generated Neovim versions
+index_small.html                 Compatibility redirect to Home
+404.html                         Missing-page response
+assets/
+  css/small.css                  Reading theme
+  css/nvim.css                   Gruvbox Light theme
+  docs/                          Downloadable CV PDFs
+  images/favicon.svg             Site icon
+scripts/
+  build_nvim.py                  Generate alternate pages
+  package_site.py                Create dist/portfolio.zip
+```
+
+`robots.txt` allows indexing. `.nojekyll` tells GitHub Pages to serve the static files
+directly. `dist/`, Python caches, and editor backup files are ignored by Git.
+
+## Edit content
+
+1. Edit the six canonical HTML pages listed above. Update their shared navigation together
+   when adding or renaming a page.
+2. Regenerate the Neovim versions using Python 3 (standard library only):
+
+   ```sh
+   python3 scripts/build_nvim.py
+   ```
+
+3. Preview locally:
+
+   ```sh
+   python3 -m http.server 8000 --bind 127.0.0.1
+   ```
+
+4. Check both presentations, mobile widths, links, and PDF downloads. Commit the source
+   pages and regenerated `*_nvim.html` files together, then push to `main`.
+
+The `_nvim.html` files are generated: edit their canonical counterparts instead.
+Theme-specific layout and colors live in the two CSS files. The terminal view uses
+Menlo, then JetBrains Mono and system monospace fallbacks; the reading view uses
+Newsreader and IBM Plex. External font loading is optional.
 
 ## GitHub Pages
 
-In **Settings → Pages**, select **Deploy from a branch**, then **main** and **/ (root)**.
-The files are ready to serve; no dependency installation or build is needed.
-`.nojekyll` tells GitHub Pages to publish the static files directly.
+Publishing source: **Settings → Pages → Deploy from a branch → main → / (root)**.
+Pushing to `main` starts GitHub's Pages build and deployment. No package installation,
+JavaScript bundler, or custom workflow is needed. Review deployments in the repository's
+**Actions** tab.
 
-## Local preview
+## Static-site ZIP
 
 ```sh
-python3 -m http.server 8000 --bind 127.0.0.1
+python3 scripts/package_site.py
 ```
 
-Open <http://localhost:8000>.
+This regenerates the Neovim pages and packages only the deployable HTML, stylesheets,
+favicon, CV PDFs, `robots.txt`, and `.nojekyll` into `dist/portfolio.zip`.
+The archive excludes scripts, documentation, and Git history.
 
-The site uses relative internal links and falls back to system fonts when Google Fonts
-is unavailable. The original content and generation scripts are maintained separately;
-this repository contains the public website files only.
+CV source files and the recovered ML repositories are maintained outside this public
+website repository. [PetsADHD](https://github.com/mruniverse8/PetsADHD) is linked from
+Home and Projects as a separate project.
