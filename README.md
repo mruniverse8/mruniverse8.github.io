@@ -6,8 +6,8 @@ A static portfolio with two presentations:
 - **[Neovim view](https://mruniverse8.github.io/index_nvim.html)** — Gruvbox Light and Dark,
   monospace typography, file explorer, document tabs, and status line.
 
-Both presentations share the same content. The bottom bar includes a Dark mode toggle
-and a link back to the reading view. The toggle remembers your choice between pages
+Both presentations share the same content. The top bar includes a Dark mode toggle; the bottom bar
+also links back to the reading view. The toggle remembers your choice between pages
 and visits; without JavaScript, the Neovim view remains readable in its default light theme.
 
 ## Repository map
@@ -52,7 +52,7 @@ directly. `dist/`, Python caches, and editor backup files are ignored by Git.
    python3 -m http.server 8000 --bind 127.0.0.1
    ```
 
-4. Check both presentations, mobile widths, links, and PDF downloads. Commit the source
+4. Check both presentations, mobile widths, links, and CV links (PDFs open in new tabs). Commit the source
    pages and regenerated `*_nvim.html` files together, then push to `main`.
 
 The `_nvim.html` files are generated: edit their canonical counterparts instead.

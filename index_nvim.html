@@ -19,19 +19,22 @@
   <a class="skip-link" href="#content">Skip to content</a>
   <header class="window-bar">
     <a class="brand" href="index_nvim.html"><span class="nvim-mark" aria-hidden="true">N</span> ronaldo / portfolio</a>
-    <a class="theme-switch" href="index.html">Reading view ↗</a>
+    <div class="header-actions">
+      <button class="dark-toggle" id="dark-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
+      <a class="theme-switch" href="index.html">Reading view ↗</a>
+    </div>
   </header>
   <div class="workspace">
     <aside class="explorer" aria-label="Portfolio explorer">
       <p class="explorer-heading">EXPLORER</p>
       <p class="folder"><span aria-hidden="true">⌄</span> ~/portfolio</p>
       <nav aria-label="Main navigation">
-        <a href="index_nvim.html" aria-current="page"><span aria-hidden="true">≡</span> Home</a> <a href="experience_nvim.html"><span aria-hidden="true">≡</span> Experience</a> <a href="research_nvim.html"><span aria-hidden="true">≡</span> Research</a> <a href="projects_nvim.html"><span aria-hidden="true">≡</span> Projects</a> <a href="teaching_nvim.html"><span aria-hidden="true">≡</span> Teaching</a> <a href="competitive-programming_nvim.html"><span aria-hidden="true">≡</span> Competitive Programming</a>
+        <a href="index_nvim.html" aria-current="page"><span aria-hidden="true">≡</span> Home</a> <a href="experience_nvim.html"><span aria-hidden="true">≡</span> Work Experience</a> <a href="research_nvim.html"><span aria-hidden="true">≡</span> Research</a> <a href="projects_nvim.html"><span aria-hidden="true">≡</span> Projects</a> <a href="teaching_nvim.html"><span aria-hidden="true">≡</span> Teaching</a> <a href="competitive-programming_nvim.html"><span aria-hidden="true">≡</span> Competitive Programming</a>
       </nav>
       <div class="explorer-links">
         <p class="explorer-heading">DOCUMENTS</p>
-        <a href="assets/docs/ronaldo-franco-industry-cv.pdf" download>↓ industry-cv.pdf</a>
-        <a href="assets/docs/ronaldo-franco-academic-cv.pdf" download>↓ academic-cv.pdf</a>
+        <a href="assets/docs/ronaldo-franco-industry-cv.pdf" target="_blank" rel="noopener noreferrer">↗ industry-cv.pdf</a>
+        <a href="assets/docs/ronaldo-franco-academic-cv.pdf" target="_blank" rel="noopener noreferrer">↗ academic-cv.pdf</a>
       </div>
       <a class="pet-note" href="projects_nvim.html#petsadhd">
         <span aria-hidden="true" class="pixel-pet"> ▄▀▀▄
@@ -42,7 +45,7 @@
       <p class="explorer-foot">Cochabamba, Bolivia<br>ML · research · teaching</p>
     </aside>
     <div class="editor">
-      <nav class="buffer-tabs" aria-label="Open pages"><a href="index_nvim.html" aria-current="page" aria-label="Home">readme.md</a> <a href="experience_nvim.html" aria-label="Experience">experience.md</a> <a href="research_nvim.html" aria-label="Research">research.md</a> <a href="projects_nvim.html" aria-label="Projects">projects.md</a> <a href="teaching_nvim.html" aria-label="Teaching">teaching.md</a> <a href="competitive-programming_nvim.html" aria-label="Competitive Programming">contests.md</a></nav>
+      <nav class="buffer-tabs" aria-label="Open pages"><a href="index_nvim.html" aria-current="page" aria-label="Home">readme.md</a> <a href="experience_nvim.html" aria-label="Work Experience">experience.md</a> <a href="research_nvim.html" aria-label="Research">research.md</a> <a href="projects_nvim.html" aria-label="Projects">projects.md</a> <a href="teaching_nvim.html" aria-label="Teaching">teaching.md</a> <a href="competitive-programming_nvim.html" aria-label="Competitive Programming">contests.md</a></nav>
       <div class="breadcrumb" aria-hidden="true">portfolio <span>/</span> readme.md</div>
       <main id="content" tabindex="-1">
 
@@ -67,18 +70,18 @@
           <li><a href="https://scholar.google.com/citations?user=wL8j6NQAAAAJ&amp;hl=es" target="_blank" rel="noreferrer">Google Scholar</a></li>
           <li><a href="https://codeforces.com/profile/cr8" target="_blank" rel="noreferrer">Codeforces</a></li>
         </ul>
-        <div class="cv-links" aria-label="Download my CV">
-          <a href="assets/docs/ronaldo-franco-industry-cv.pdf" download>Industry CV <span>(PDF)</span> ↓</a>
-          <a href="assets/docs/ronaldo-franco-academic-cv.pdf" download>Academic CV <span>(PDF)</span> ↓</a>
+        <div class="cv-links" aria-label="View my CV">
+          <a href="assets/docs/ronaldo-franco-industry-cv.pdf" target="_blank" rel="noopener noreferrer">Industry CV <span>(PDF)</span> ↗</a>
+          <a href="assets/docs/ronaldo-franco-academic-cv.pdf" target="_blank" rel="noopener noreferrer">Academic CV <span>(PDF)</span> ↗</a>
         </div>
       </header>
       <section aria-labelledby="explore-title">
-        <h2 id="explore-title">Explore my work</h2>
+        <h2 id="explore-title">My work</h2>
         <div class="page-list">
-          <a href="experience_nvim.html"><span>Experience</span><p>Applied ML systems and research at Huawei.</p><span aria-hidden="true">↗</span></a>
+          <a href="experience_nvim.html"><span>Work Experience</span><p>Freelance Machine Learning Engineer and Researcher at Huawei.</p><span aria-hidden="true">↗</span></a>
           <a href="research_nvim.html"><span>Research</span><p>LLMs for program repair and GFlowNets for molecule generation.</p><span aria-hidden="true">↗</span></a>
-          <a href="projects_nvim.html"><span>Projects</span><p>Five ML projects and PetsADHD, a playful companion for the editor.</p><span aria-hidden="true">↗</span></a>
-          <a href="teaching_nvim.html"><span>Teaching</span><p>Machine learning, algorithms, and mentoring in Bolivia.</p><span aria-hidden="true">↗</span></a>
+          <a href="projects_nvim.html"><span>Projects</span><p>Several ML projects.</p><span aria-hidden="true">↗</span></a>
+          <a href="teaching_nvim.html"><span>Teaching</span><p>Machine learning, algorithms, and coaching.</p><span aria-hidden="true">↗</span></a>
           <a href="competitive-programming_nvim.html"><span>Competitive Programming</span><p>From representing Bolivia at the IOI to the ICPC World Finals.</p><span aria-hidden="true">↗</span></a>
         </div>
       </section>
@@ -104,7 +107,6 @@
   <footer class="statusline" aria-label="Theme information">
     <span class="mode">NORMAL</span><span class="status-file">readme.md</span>
     <span class="status-theme" id="theme-label">gruvbox · light</span>
-    <button class="dark-toggle" id="dark-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
     <a class="bottom-view-switch" href="index.html">Reading view</a>
     <span class="encoding">UTF-8</span><a href="#content">↑ Top</a>
   </footer>

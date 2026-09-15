@@ -46,6 +46,8 @@ a:hover { color: var(--green); text-decoration-color: currentColor; }
 .brand { color: var(--ink); font-weight: 600; text-decoration: none; }
 .nvim-mark { display: inline-block; color: var(--green); padding-right: 12px; font-size: 19px; font-weight: 700; }
 .theme-switch { white-space: nowrap; }
+.window-bar { flex-wrap: wrap; }
+.header-actions { display: flex; align-items: center; gap: 16px; margin-left: auto; }
 .workspace { display: grid; grid-template-columns: 250px minmax(0, 1fr); min-height: calc(100vh - 52px); padding-bottom: 37px; }
 .explorer { background: var(--panel); border-right: 1px solid var(--rule); padding: 28px 0; font-size: 12px; }
 .explorer-heading { margin: 0 22px 20px; color: var(--muted); font-size: 10px; letter-spacing: .13em; }
@@ -123,7 +125,7 @@ li::marker { color: var(--green); }
 .mode { background: var(--green); color: var(--mode-ink); font-weight: 700; }
 .status-theme { margin-left: auto; }
 .statusline a { color: var(--ink); }
-.dark-toggle { font: inherit; color: var(--ink); background: transparent; border: 0; border-inline: 1px solid var(--rule); cursor: pointer; white-space: nowrap; }
+.dark-toggle { font: inherit; color: var(--ink); background: transparent; border: 1px solid var(--rule); padding: 6px 10px; cursor: pointer; white-space: nowrap; }
 .dark-toggle[aria-pressed="true"] { color: var(--green); background: var(--highlight); }
 .dark-toggle:hover { color: var(--blue); }
 .bottom-view-switch { white-space: nowrap; }
@@ -144,7 +146,7 @@ li::marker { color: var(--green); }
   h2 { font-size: 19px; }
   .statusline > * { padding-inline: 9px; }
   .encoding, .status-file, .status-theme { display: none; }
-  .dark-toggle { margin-left: auto; }
+  .bottom-view-switch { margin-left: auto; }
   .status-theme { font-size: 9px; }
   .page-footer { margin-inline: 20px; }
 }

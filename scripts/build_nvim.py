@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = (
     ("index", "Home", "readme"),
-    ("experience", "Experience", "experience"),
+    ("experience", "Work Experience", "experience"),
     ("research", "Research", "research"),
     ("projects", "Projects", "projects"),
     ("teaching", "Teaching", "teaching"),
@@ -51,7 +51,10 @@ def build():
   <a class="skip-link" href="#content">Skip to content</a>
   <header class="window-bar">
     <a class="brand" href="index_nvim.html"><span class="nvim-mark" aria-hidden="true">N</span> ronaldo / portfolio</a>
-    <a class="theme-switch" href="{slug}.html">Reading view ↗</a>
+    <div class="header-actions">
+      <button class="dark-toggle" id="dark-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
+      <a class="theme-switch" href="{slug}.html">Reading view ↗</a>
+    </div>
   </header>
   <div class="workspace">
     <aside class="explorer" aria-label="Portfolio explorer">
@@ -62,8 +65,8 @@ def build():
       </nav>
       <div class="explorer-links">
         <p class="explorer-heading">DOCUMENTS</p>
-        <a href="assets/docs/ronaldo-franco-industry-cv.pdf" download>↓ industry-cv.pdf</a>
-        <a href="assets/docs/ronaldo-franco-academic-cv.pdf" download>↓ academic-cv.pdf</a>
+        <a href="assets/docs/ronaldo-franco-industry-cv.pdf" target="_blank" rel="noopener noreferrer">↗ industry-cv.pdf</a>
+        <a href="assets/docs/ronaldo-franco-academic-cv.pdf" target="_blank" rel="noopener noreferrer">↗ academic-cv.pdf</a>
       </div>
       <a class="pet-note" href="projects_nvim.html#petsadhd">
         <span aria-hidden="true" class="pixel-pet"> ▄▀▀▄\n▐ ▀▀ ▌\n ▀▄▄▀</span>
@@ -84,7 +87,6 @@ def build():
   <footer class="statusline" aria-label="Theme information">
     <span class="mode">NORMAL</span><span class="status-file">{buffer}.md</span>
     <span class="status-theme" id="theme-label">gruvbox · light</span>
-    <button class="dark-toggle" id="dark-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
     <a class="bottom-view-switch" href="{slug}.html">Reading view</a>
     <span class="encoding">UTF-8</span><a href="#content">↑ Top</a>
   </footer>
