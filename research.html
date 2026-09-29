@@ -43,7 +43,7 @@
 <div class="entries"><article class="item">
           <header>
             <div>
-              <p class="kind">Publication</p>
+              <p class="kind">arXiv preprint</p>
               <h2>Exploring the Potential of Conversational Test Suite Based Program Repair on SWE-bench</h2>
               <p>A. Cheshkov, P. Zadorozhny, R. Levichev, E. Maslov, and R. Franco Jaldin</p>
             </div>
@@ -51,9 +51,9 @@
           </header>
           <p>
             We evaluated test-feedback-driven repair on 92 selected SWE-bench Lite problems.
-            With oracle function localization, Llama 3.1 patches passed public and hidden
-            tests for <strong>47% of the problems</strong>, compared with
-            <strong>34% for repeated generation</strong> under the same request budget.
+            With oracle function localization (the relevant functions supplied), Llama 3.1
+            patches passed public and hidden tests for 47% of the problems, compared with
+            34% for repeated generation under the same request budget.
           </p>
           <p><a class="more" href="https://arxiv.org/abs/2410.04485" target="_blank" rel="noreferrer">arXiv:2410.04485 ↗</a></p>
         </article>
@@ -61,16 +61,19 @@
           <header>
             <div>
               <p class="kind">BSc thesis</p>
-              <h2>GFlowNet post-training for text-conditioned molecule generation</h2>
+              <h2>BSc Thesis — GFlowNet Post-training for Molecule Generation</h2>
             </div>
             <time>2025–2026</time>
           </header>
           <p>
-            I post-trained BioT5+ as a GFlowNet to generate diverse drug-like molecules from
-            natural-language descriptions. The model uses LoRA, a scalar flow head, and the
-            Detailed Balance objective. I compared on-policy, reward-prioritized, and
-            trajectory-balance-residual-prioritized replay. Combining supervised reference
-            trajectories with on-policy rollouts produced the most stable training.
+            I studied GFlowNet post-training for generating candidate molecules from text descriptions.
+            Each training trajectory records how the model produces one molecule’s representation, token by token.
+          </p>
+          <p>
+            Starting from BioT5+, I compared training on newly sampled trajectories alone with adding
+            supervised trajectories or replaying previously sampled trajectories. Replay selection
+            was prioritized by either molecular reward or trajectory-balance error, while the GFlowNet
+            architecture and training objective remained fixed.
           </p>
         </article></div><p class="page-note">For coursework and implementation experiments, see <a href="projects.html">Projects</a>.</p>
     </main>
