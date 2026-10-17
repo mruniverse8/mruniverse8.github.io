@@ -31,6 +31,8 @@ assets/
 scripts/
   build_nvim.py                  Generate alternate pages
   package_site.py                Create dist/portfolio.zip
+latex/                           Editable industry CV and local PDF build
+constitution/                    Project purpose, stack, and current work
 ```
 
 `robots.txt` allows indexing. `.nojekyll` tells GitHub Pages to serve the static files
@@ -77,6 +79,9 @@ This regenerates the Neovim pages and packages only the deployable HTML, stylesh
 theme script, favicon, CV PDFs, `robots.txt`, and `.nojekyll` into `dist/portfolio.zip`.
 The archive excludes scripts, documentation, and Git history.
 
-CV source files and the recovered ML repositories are maintained outside this public
-website repository. [PetsADHD](https://github.com/mruniverse8/PetsADHD) is linked from
-Home and Projects as a separate project.
+The industry CV source and [build instructions](latex/README.md) are in `latex/`.
+Run `make -C latex` to build a review copy, then `make -C latex install` to update
+the PDF in `assets/docs/`. The academic CV source and recovered ML repositories
+are maintained outside this public website repository.
+[PetsADHD](https://github.com/mruniverse8/PetsADHD) is linked from Home and Projects
+as a separate project.

@@ -1,0 +1,137 @@
+% Reconstructed from the supplied industry CV on 2026-10-16.
+% Build: make -C latex (from the repository root).
+% Changes: Docker/Kubernetes freelance bullet and skill; ML engineer headline/summary.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=15mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\hypersetup{
+  pdftitle={Ronaldo Franco Jaldin - Industry CV},
+  pdfauthor={Ronaldo Franco Jaldin},
+  pdfsubject={Machine learning engineering experience}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1em}
+\raggedright
+
+\newcommand{\sep}{\enspace\textperiodcentered\enspace}
+\newcommand{\cvsection}[1]{%
+  \par\addvspace{5pt}%
+  {\bfseries #1\par}\nobreak
+  \vspace{1.5pt}\hrule height 0.3pt\relax
+  \nobreak\vspace{2pt}%
+}
+\newcommand{\cventry}[2]{%
+  \par\noindent\textbf{#1}\hfill{\small #2}\par\nobreak
+}
+\newenvironment{cvitems}{%
+  \begin{list}{\textbullet}{%
+    \setlength{\leftmargin}{12pt}%
+    \setlength{\rightmargin}{0pt}%
+    \setlength{\labelwidth}{7pt}%
+    \setlength{\labelsep}{5pt}%
+    \setlength{\itemsep}{1.5pt}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{2pt}%
+    \setlength{\partopsep}{0pt}%
+  }%
+}{\end{list}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Ronaldo Franco Jaldin}\par
+  \vspace{2pt}
+  Machine Learning Engineer\par
+  \vspace{3pt}
+  {\small
+    Cochabamba, Bolivia\sep
+    \href{mailto:ronaldofj83@gmail.com}{ronaldofj83@gmail.com}\sep
+    \href{https://github.com/mruniverse8}{GitHub}\sep
+    \href{https://www.linkedin.com/in/ronaldo-franco-jaldin-2282311a3/}{LinkedIn}\sep
+    \href{https://mruniverse8.github.io/}{Portfolio}\par
+  }
+\end{center}
+
+Machine learning engineer with experience in code retrieval, software repair, and computer vision.
+
+\cvsection{Education}
+\cventry{HSE University --- Moscow}{Graduated 2026}
+BSc, Applied Mathematics and Informatics
+
+\cvsection{Experience}
+\cventry{Freelance Machine Learning Engineer}{Apr 2025--present}
+\begin{cvitems}
+  \item Delivered a camera-based attendance system with face detection and anti-spoofing checks.
+  \item Developed video analytics to recognize coffee-shop products, count production, and generate
+    timestamped reports; prepared training data with model-assisted annotation.
+  \item Work with Docker and Kubernetes in development workflows.
+  \item Use AI coding tools (Claude, Codex) to speed up development and testing.
+\end{cvitems}
+
+\vspace{3pt}
+\cventry{Research Assistant --- Huawei Research Institute}{Mar 2024--Mar 2025}
+\begin{cvitems}
+  \item Built reproducible test-environment pipelines across repositories and contributed Docker
+    environments to the SWE-bench harness.
+  \item Built a patch/file retrieval pipeline and fine-tuned Jina embeddings with QLoRA, reaching
+    0.62 MRR on SWE-bench Verified above the off-the-shelf baseline.
+  \item Investigated how Llama 3.1 prompting and repeated sampling affect issue resolution with
+    oracle-retrieved context; experiments resolved 77\,\% of evaluated issues.
+  \item \href{https://arxiv.org/abs/2410.04485}{Co-authored an arXiv preprint on test-feedback-driven program repair (2024).}
+\end{cvitems}
+
+\vspace{3pt}
+\cventry{Student Researcher --- HSE Computational Biology Lab}{Mar--Sep 2023}
+Worked in C++ on parallelization and concurrency optimizations for the Crux proteomics toolkit.
+
+\cvsection{Technical Service}
+\textbf{IOI 2025 Scientific Committee} --- Problem setting, testing, and contest design.
+
+\cvsection{BSc Thesis --- GFlowNet Post-training for Molecule Generation}
+Studied GFlowNet post-training of BioT5+ to generate multiple candidate molecules from text. Adding
+supervised sequences from ground-truth examples made early training more stable and yielded slightly
+more distinct, valid molecules similar to those examples.
+
+\cvsection{Honors and Competitions}
+\begin{cvitems}
+  \item \textbf{ICPC World Finalist} (2022) --- \textbf{Honorable Mention}, Bangladesh.
+  \item ICPC South America Regional --- \textbf{3rd} (2020), 10th (2019), and 15th (2018).
+  \item Bolivia Preliminary Contest --- \textbf{1st place} (2018, 2019, 2020, and 2025).
+  \item IEEEXtreme global programming competition --- \textbf{11th, 22nd, 19th, and 38th worldwide}
+    (2018--2021).
+  \item Topcoder Open South America Regional --- \textbf{2nd place} (2019).
+  \item International Olympiad in Informatics (IOI) --- participant (2014, 2015, and 2017).
+  \item Ibero-American Olympiad in Informatics --- \textbf{bronze} (2014, 2015); Bolivian Olympiad
+    in Informatics --- \textbf{gold} (2016), \textbf{silver} (2013, 2014, 2015).
+\end{cvitems}
+
+\cvsection{Technical Skills}
+\begingroup
+\setlength{\tabcolsep}{0pt}
+\begin{tabular}{@{}p{85pt}l@{}}
+  \textbf{Programming} & Python\sep C++\sep SQL\sep Bash \\
+  \textbf{Software} & FastAPI\sep PostgreSQL\sep Docker\sep Kubernetes\sep Git/GitHub\sep GitHub Actions \\
+  \textbf{ML / Search} & PyTorch\sep Transformers\sep LoRA/QLoRA\sep FAISS \\
+  \textbf{Vision} & OpenCV\sep YOLO\sep ByteTrack\sep ONNX Runtime
+\end{tabular}\par
+\endgroup
+
+\vspace{5pt}
+\textbf{Languages:} Spanish (native)\sep English (fluent)\sep Russian (intermediate)
+
+\par\vspace{5pt}
+\textbf{Teaching and Coaching.} Taught algorithms at UMSS (2025), introductory machine learning at UMSS
+(2026), and private online LLM classes (2025). Coached school students and co-coached ICPC teams in
+Bolivia (2016--2023); taught at UMSS ICPC camps (2018--2019).
+
+\end{document}
